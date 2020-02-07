@@ -1,0 +1,33 @@
+extend components/_plantilla.pug
+block css
+  link(rel="stylesheet", href="../css/main.css")
+block contenidos
+  main.container
+    section.hide
+      div.section
+        div.row
+          div.col.m7.input-field.input-container
+            i.material-icons search
+            input(type="text" placeholder="Buscar")#search
+    section
+      div.row
+        div.col.s12
+          h2 Titulo de Post
+    section.section
+      div.row
+        div.col.m8
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore accusantium eos tempora alias nobis error dolor repellat ducimus, molestias ea libero praesentium nisi, ad in quae nihil cupiditate non? Accusamus!Minima minus molestias sequi natus commodi, velit labore cumque mollitia sapiente praesentium obcaecati quae sunt dolorum aperiam, vero repudiandae dolor beatae quasi accusamus porro odio, autem placeat. Ducimus, optio unde?Quis maxime illum, natus, optio quidem doloribus, ratione cupiditate non reprehenderit consequuntur officia aspernatur. Eius ab at similique, alias quis expedita vitae corrupti repudiandae sequi recusandae incidunt, ipsa tempora reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores eveniet iusto excepturi corrupti, delectus sed error fugiat quidem quisquam doloribus. Debitis nihil doloribus nemo, distinctio assumenda ratione aliquam sunt.Porro labore, consequatur aspernatur consectetur culpa reprehenderit ut minus. Omnis suscipit ea ullam nemo vero animi beatae accusamus itaque mollitia nulla, sunt ab, praesentium illum ad rerum possimus cum quo?
+        div.col.m4
+          div.card.indigo.lighten-3
+            div.card-content.white-text
+              span.card-title Card Title
+              p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nam omnis voluptatum aliquid suscipit aut sed magnam magni. Commodi esse deserunt veritatis nesciunt, nam placeat dignissimos amet modi aut ut maiores dolorum impedit ad quibusdam vel rerum eligendi labore numquam.
+    section.section
+      div.row
+        div.post-pic.z-depth-2
+    section
+      div.row
+       +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 1', 'Here is some more information about this product that is only revealed once clicked on.', 'post.html', 'Ir')
+       +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 2', 'Here is some more information about this product that is only revealed once clicked on.', 'post.html', 'Ir')
+       +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 3', 'Here is some more information about this product that is only revealed once clicked on.', 'post.html', 'Ir')
+
