@@ -1,0 +1,13 @@
+mixin cajas(Title, Imagen, Alternativo, Description, Link, Button_text)
+  article.col.s12.m6.l4
+    div.card
+      div.card-image.waves-effect.waves-block.waves-light
+        img(src=Imagen, alt=Alternativo).activator
+      div.card-content
+        span.card-title.grey-text.text-darken-4.activator=Title
+          i.material-icons.right more_vert
+      div.card-reveal
+        span.card-title.grey-text.text-darken-4=Title
+          i.material-icons.right close
+        p=Description
+        a(href=Link).waves-effect.waves-teal.btn-flat.teal.lighten-5.right=Button_text

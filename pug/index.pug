@@ -2,3 +2,20 @@ extend components/_plantilla.pug
 block css
   link(rel="stylesheet", href="../css/main.css")
 block contenidos
+  main.container
+    section
+      div.section
+        div.row
+          div.col.m7.input-field.input-container
+            i.material-icons search
+            input(type="text" placeholder="Buscar")#search
+    section
+      div.row
+        +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 1', 'Here is some more information about this product that is only revealed once clicked on.', '#', 'Ir')
+        +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 2', 'Here is some more information about this product that is only revealed once clicked on.', '#', 'Ir')
+        +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 3', 'Here is some more information about this product that is only revealed once clicked on.', '#', 'Ir')
+        +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 4', 'Here is some more information about this product that is only revealed once clicked on.', '#', 'Ir')
+        +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 5', 'Here is some more information about this product that is only revealed once clicked on.', '#', 'Ir')
+        +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 6', 'Here is some more information about this product that is only revealed once clicked on.', '#', 'Ir')
+        
+
