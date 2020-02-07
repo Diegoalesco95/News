@@ -1,0 +1,33 @@
+/*
+* HEADER -------------------
+*/
+
+header {
+  height: 500px;
+  nav {
+    height: 100px;
+    background-color: $color-claro;
+    box-shadow: none;
+    & .brand-logo {
+      height: 100px;
+      left: 15%;
+      img {
+        width: 52px;
+      }
+    }
+    ul {
+      height: 100px;
+      a {
+        color: $color-fuente-nav;
+      }
+    }
+  }
+}
+.header-main-pic {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../assets/img/Banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

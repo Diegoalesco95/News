@@ -1,0 +1,44 @@
+/*
+* GLOBALES -------------------
+*/
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/*
+* HEADER -------------------
+*/
+header {
+  height: 500px;
+}
+header nav {
+  height: 100px;
+  background-color: #fff;
+  box-shadow: none;
+}
+header nav .brand-logo {
+  height: 100px;
+  left: 15%;
+}
+header nav .brand-logo img {
+  width: 52px;
+}
+header nav ul {
+  height: 100px;
+}
+header nav ul a {
+  color: #808080;
+}
+
+.header-main-pic {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../assets/img/Banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
