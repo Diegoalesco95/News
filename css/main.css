@@ -42,3 +42,29 @@ header nav ul a {
   background-position: center;
   background-size: cover;
 }
+
+/*
+* MAIN -------------------
+*/
+.input-field.input-container {
+  display: flex;
+  height: 100px;
+  float: none;
+  margin: 0 auto;
+}
+
+.input-field > #search {
+  margin-top: 25px;
+}
+
+.input-container i {
+  margin: 45px 15px 0 0;
+}
+
+/*
+* FOOTER -------------------
+*/
+footer.page-footer {
+  height: 80px;
+  bottom: 0;
+}

@@ -1,0 +1,18 @@
+/*
+* MAIN -------------------
+*/
+
+.input-field.input-container {
+  display: flex;
+  height: 100px;
+  float: none;
+  margin: 0 auto;
+}
+.input-field > #search {
+  margin-top: 25px;
+}
+.input-container {
+  i {
+    margin: 45px 15px 0 0;
+  }
+}
