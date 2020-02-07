@@ -1,0 +1,20 @@
+extend components/_plantilla.pug
+block css
+  link(rel="stylesheet", href="../css/main.css")
+block hero-image
+  section.container
+    div.row.registro-titulo
+      div.col.s12
+        h1.center-align Regístrate en News
+block contenidos
+  main.container
+    div.row
+      div.col.s12
+        div.card-panel
+          form(action="")
+            div.row.section
+              +inputs('first-name', 'Nombre')
+              +inputs('last-name', 'Apellidos')
+            div.row
+              +inputs('email', 'Email')
+              +inputs('password', 'Contraseña')

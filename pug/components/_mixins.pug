@@ -11,3 +11,8 @@ mixin cajas(Title, Imagen, Alternativo, Description, Link, Button_text)
           i.material-icons.right close
         p=Description
         a(href=Link).waves-effect.waves-teal.btn-flat.teal.lighten-5.right=Button_text
+
+mixin inputs(ident, Campo)
+  div.input-field.col.s12.m6
+    input(type="text" id=ident).validate
+    label(for=ident)=Campo
