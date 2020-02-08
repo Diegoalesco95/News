@@ -1,12 +1,21 @@
-header
-  nav.container
-    a(href="#").brand-logo.valign-wrapper.z-depth-2
-      img(src="../assets/img/Logo-negro.png", alt="Logo de News").responsive-img.left
-    ul.right.valign-wrapper
+nav.container
+  div.nav-wrapper
+    a(href="index.html").brand-logo.valign-wrapper.z-depth-2
+      img(src="../assets/img/Logo.jpg", alt="Logo de News").responsive-img.left
+    a(href="#" data-target="menu-mobile").sidenav-trigger.right
+      i.material-icons.black-text menu
+    ul.right.valign-wrapper.hide-on-med-and-down
       li
         a(href="#") Sobre Nosotros
       li
         a(href="#") Contacto
       li
         a(href="registro.html").btn Registro
-  block hero-image
+ul.sidenav#menu-mobile
+  li
+    a(href="#") Sobre Nosotros
+  li
+    a(href="#") Contacto
+  li
+    a(href="registro.html").btn Registro
+block hero-image

@@ -1,8 +1,11 @@
 extend components/_plantilla.pug
 block css
   link(rel="stylesheet", href="../css/main.css")
-block hero-image
-  section.header-main-pic.z-depth-2
+block header
+  header
+    include components/_header.pug
+    block hero-image
+      section.header-main-pic.z-depth-2
 block contenidos
   main.container
     section.hide
@@ -30,6 +33,6 @@ block contenidos
     section
       div.row
        +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 1', 'Here is some more information about this product that is only revealed once clicked on.', 'post.html', 'Ir')
-       +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 2', 'Here is some more information about this product that is only revealed once clicked on.', 'post.html', 'Ir')
-       +cajas('Card Title', '../assets/img/card1.jpg', 'Imagen Card 3', 'Here is some more information about this product that is only revealed once clicked on.', 'post.html', 'Ir')
+       +cajas('Card Title', '../assets/img/card2.jpg', 'Imagen Card 2', 'Here is some more information about this product that is only revealed once clicked on.', 'post.html', 'Ir')
+       +cajas('Card Title', '../assets/img/card3.jpg', 'Imagen Card 3', 'Here is some more information about this product that is only revealed once clicked on.', 'post.html', 'Ir')
 

@@ -16,3 +16,8 @@ mixin inputs(ident, Campo)
   div.input-field.col.s12.m6
     input(type="text" id=ident).validate
     label(for=ident)=Campo
+
+mixin checkboxes(Texto)
+  label.col.s12.m4
+    input(type="checkbox")
+    span=Texto

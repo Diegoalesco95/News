@@ -1,11 +1,14 @@
 extend components/_plantilla.pug
 block css
   link(rel="stylesheet", href="../css/main.css")
-block hero-image
-  section.container
-    div.row.registro-titulo
-      div.col.s12
-        h1.center-align Regístrate en News
+block header
+  header.registro-header
+    include components/_header.pug
+    block hero-image
+      section.container
+        div.row.registro-titulo
+          div.col.s12
+            h1.center-align.white-text Regístrate en News
 block contenidos
   main.container
     div.row
@@ -18,3 +21,19 @@ block contenidos
             div.row
               +inputs('email', 'Email')
               +inputs('password', 'Contraseña')
+            div.section
+              h3.center-align Te interesa noticas de:
+            div.section
+              div.row
+                +checkboxes('Política')
+                +checkboxes('Economía')
+                +checkboxes('Finanzas')
+              div.row
+                +checkboxes('Entretenimiento')
+                +checkboxes('Cultura')
+                +checkboxes('Tecnología')
+            div.section
+              div.row
+                div.col.s12
+                  button.btn.waves-effect.waves-light.center-align Enviar
+                    i.material-icons.right send
